@@ -1,0 +1,14 @@
+{
+  "name": "base_app",
+  "version": "1.0.0",
+  "description": "Base app for golem dapp testing.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SiggiS",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}

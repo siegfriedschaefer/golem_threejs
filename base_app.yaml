@@ -1,0 +1,14 @@
+payloads:
+  base_app:
+    runtime: "vm"
+    params:
+      image_hash: "485188a5572ff0afff268c16fadebd73780e821249ffbcb83f2fcf35"
+nodes:
+  base_app:
+    payload: "base_app"
+    init:
+      - run:
+          args: ["/bin/sh", "-c", "node app.js > /dev/null &"]
+    http_proxy:
+      ports:
+        - "8085"
